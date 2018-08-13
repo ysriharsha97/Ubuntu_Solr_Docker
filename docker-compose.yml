@@ -1,0 +1,12 @@
+version: '2'
+services:
+  ubuntu:
+    build: .
+    image: ubuntu_solr
+    container_name: ubuntu_solr_7_4_0
+    ports:
+     - "8983:8983"
+     - "8984:8984"
+     - "80:80"
+    tty: true
+    
